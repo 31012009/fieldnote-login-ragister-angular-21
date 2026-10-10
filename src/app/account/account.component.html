@@ -1,0 +1,13 @@
+<main class="account-screen">
+  <header class="account-header">
+    <a class="brand" routerLink="/account"><span class="brand-mark">f.</span><span>fieldnote</span></a>
+    <button class="signout-button" type="button" (click)="signOut()">Sign out <span aria-hidden="true">↗</span></button>
+  </header>
+  <section class="account-content">
+    <span class="eyebrow">YOUR SPACE</span>
+    <h1>Good to have<br />you here, <em>{{ authService.currentUser()?.name }}.</em></h1>
+    <p class="account-email">{{ authService.currentUser()?.email }}</p>
+    <div class="account-note"><span class="sun-mark" aria-hidden="true">✳</span><p>This is your quiet corner. Your next good idea can start right here.</p></div>
+  </section>
+  <footer class="page-footer"><span>© 2026 Fieldnote</span><span>Made for the in-between moments.</span></footer>
+</main>

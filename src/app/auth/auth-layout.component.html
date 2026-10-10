@@ -1,0 +1,25 @@
+<div class="auth-layout">
+  <aside class="story-panel">
+    <a class="brand brand-light" routerLink="/login" aria-label="Fieldnote home">
+      <span class="brand-mark" aria-hidden="true">f.</span><span>fieldnote</span>
+    </a>
+    <div class="story-copy">
+      <span class="eyebrow">A WORKSPACE FOR THE WORK THAT MATTERS</span>
+      <h1>Make room<br />for your next<br /><em>good idea.</em></h1>
+      <p>A thoughtful place to begin, pick up, and find your rhythm again.</p>
+    </div>
+    <div class="story-footer"><span class="sun-mark" aria-hidden="true">✳</span><span>Take it one page at a time.</span><span class="story-index">01 / 03</span></div>
+    <div class="panel-lines" aria-hidden="true"></div>
+  </aside>
+  <main class="form-panel">
+    <section class="auth-content">
+      <nav class="auth-tabs" aria-label="Account">
+        <a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Sign in</a>
+        <a routerLink="/register" routerLinkActive="active">Create account</a>
+      </nav>
+      <router-outlet />
+      <p class="demo-note"><span aria-hidden="true">i</span> Demo access is stored in this browser. Use a unique password.</p>
+    </section>
+    <footer class="page-footer"><span>© 2026 Fieldnote</span><span>Made for the in-between moments.</span></footer>
+  </main>
+</div>
